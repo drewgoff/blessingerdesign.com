@@ -1,0 +1,11 @@
+@use "../utilities/variables";
+
+main { 
+  flex: 1 0 auto; 
+  padding-top: 170px;
+}
+
+section, article {
+  margin: 0 auto;
+  padding: 0 15px 0 15px;  
+}

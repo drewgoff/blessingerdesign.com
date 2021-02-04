@@ -1,0 +1,127 @@
+@use "../utilities/variables";
+
+/*====================== 
+        Footer  
+===================== */
+footer {
+  background-color: variables.$orange-accent; 	
+  flex-shrink: 0; 
+  width: 100%;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+
+/*====================== 
+    Parent Container  
+===================== */
+.parent-flex-container {
+  display: flex;
+  flex-flow: row nowrap;
+  min-width: 300px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+
+.parent-flex-item:nth-child(1) {
+  flex: 1 1 48%;
+  align-self: auto;
+  margin-right: 40px;
+}
+
+.parent-flex-item:nth-child(2) {
+  flex: 1 1 48%;
+  align-self: auto;
+  margin-left: 40px;
+}
+
+
+/*====================== 
+    Child Container  
+===================== */
+.child-flex-container {
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 200px;
+  max-width: 600px;
+}
+
+.child-flex-item:nth-child(1),
+.child-flex-item:nth-child(2) {
+  flex: 1 1 auto;
+  align-self: auto;
+  margin: 8px;
+}
+
+.child-flex-item:nth-child(2) { margin-left: auto; }
+
+@media only screen and (max-width: 600px) { 
+  .parent-flex-container { flex-flow: row wrap; } 
+  .parent-flex-item:nth-child(1) {
+    flex: 1 1 48%;
+    align-self: auto;
+    margin-right: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+  }
+  
+  .parent-flex-item:nth-child(2) {
+    flex: 1 1 48%;
+    align-self: auto;
+    margin-right: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+  }
+}
+
+p.contact-message {
+  font-size: 34px;
+  width: 200px;
+  text-align: right;
+  color: #fff;
+}
+
+
+/*====================== 
+      Sub Footer  
+===================== */
+.sub-footer {
+  background-color: variables.$blue-accent; 
+  width: 100%;
+  margin-top: 10px;
+  padding-top: 35px;
+  padding-bottom: 25px;
+  z-index: 2;
+}
+
+.sub-footer__flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  }
+
+.sub-footer__flex-item:nth-child(1) {
+  order: 1;
+  flex: 0 1 auto;
+  align-self: auto;
+  font-size: 16px;
+  color: #fff;
+  padding-top: 6px;
+  padding-bottom: 4px;
+}
+
+.sub-footer__flex-item:nth-child(2) {
+  order: 2;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+
+.social-media {
+  display: inline-block;
+  margin: 3px;
+}

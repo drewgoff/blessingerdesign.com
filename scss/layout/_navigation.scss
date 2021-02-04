@@ -1,0 +1,34 @@
+@use "../utilities/variables";
+
+.logo {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+nav {
+  max-width: 700px;
+  margin: 0 auto;
+  position: sticky;
+}
+
+ul {
+  display: flex;
+  justify-items: center;
+  justify-content: space-evenly;
+}
+
+ul.clientList {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+li {
+  font-size: 1.6rem;
+  font-weight: variables.$light-weight;
+  color: variables.$grey-text;
+}
+
+a { color: variables.$grey-text; }
+a:hover { color: variables.$orange-accent; }
+.active { color: variables.$orange-accent; }

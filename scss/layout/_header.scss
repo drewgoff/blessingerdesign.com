@@ -1,0 +1,9 @@
+@use "../utilities/variables";
+
+header {
+  height: 170px;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  background-color: variables.$white;
+}
